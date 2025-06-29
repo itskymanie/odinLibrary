@@ -3,7 +3,6 @@
 <head>
     <link rel= "stylesheet" href ="styles.css">
     <meta charset="UTF-8">
-    <script src = "./scripts.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library</title>
 </head>
@@ -28,10 +27,14 @@
         <label>Title: <input type = "text" name = "title" required></label><br>
         <label>Author: <input type="text" name = "author" required></label><br>
         <label>Pages: <input type="number" name= "pages" required></label><br>
-        <label>Read: <input type = "checkbox" name="isRead" required></label><br>
-        <button type = "submit">Add Book</button>
-        <button type= "button" id = "cancel-btn">Cancel</button>
+        <label>Read: <input type = "checkbox" id = "read-checkbox" name="isRead" ></label><br>
+        <div id = "form-btn">
+            <button type = "submit">Add Book</button>
+            <button type= "button" id = "cancel-btn">Cancel</button>
+        </div>
+        
     </form>
 </dialog>
+<script src = "./scripts.js"></script>
 </body>
 </html>
